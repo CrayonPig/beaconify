@@ -7,7 +7,8 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "rollup -w --config ./scripts/rollup.dev.js"
+    "dev": "rollup -w --config ./scripts/rollup.dev.js",
+    "postinstall": "lerna link"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.0",

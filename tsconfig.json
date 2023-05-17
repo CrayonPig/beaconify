@@ -16,7 +16,12 @@
     "sourceMap": true,
     "outDir": "dist",
     "baseUrl": ".",
-    "lib": ["esnext", "DOM"]
+    "lib": ["esnext", "DOM"],
+    "paths": {
+      "@beaconify/utils": [
+        "./packages/utils/lib"
+      ]
+    }
   },
   "include": [
     "packages/**/*.ts",

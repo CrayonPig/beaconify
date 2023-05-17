@@ -6,6 +6,7 @@
   "homepage": "https://github.com/CrayonPig/beaconify#readme",
   "license": "MIT",
   "main": "lib/index.js",
+  "types": "index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"

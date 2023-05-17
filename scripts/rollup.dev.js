@@ -3,14 +3,13 @@ import commonjs from '@rollup/plugin-commonjs';
 import serve from 'rollup-plugin-serve'
 import livereload from 'rollup-plugin-livereload'
 import typescript from 'rollup-plugin-typescript2';
-// import dts from 'rollup-plugin-dts'
 
 const extensions = [
   '.js',
   '.ts'
 ]
 
-const entry = 'packages/core/lib/index.ts'
+const entry = 'packages/core/lib/index.ts';
 
 export default [
   {
@@ -34,9 +33,5 @@ export default [
       })
     ]
   },
-  // {
-  //   input: entry,
-  //   output: [{filename: 'index.d.ts', dir: 'dist/es/type', format: 'esm'}],
-  //   plugins: [dts()]
-  // }
+
 ]
