@@ -22,6 +22,9 @@
     "linebreak-style": "off",
     "import/prefer-default-export": "warn",
     "prefer-destructuring": "warn",
-    "@typescript-eslint/ban-ts-comment": "off"
+    "@typescript-eslint/ban-ts-comment": "off",
+    "no-console": "off",
+    "no-underscore-dangle": "off",
+    "no-param-reassign": "off"
   }
 }

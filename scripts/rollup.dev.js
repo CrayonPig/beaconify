@@ -15,7 +15,7 @@ export default {
   output: {
     file: './dist/bundle.js', // 出口
     format: 'iife',
-    name: 'beaconify'
+    name: 'Beaconify'
   },
   extensions,
   plugins: [
