@@ -1,0 +1,27 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "globals": {
+    "NodeJS": "readonly",
+    "Window": "readonly"
+  },
+  "plugins": [
+    "guide"
+  ],
+  "extends": [
+    "plugin:guide/base",
+    "plugin:guide/typeScript"
+  ],
+  "rules": {
+    "import/no-named-as-default-member": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "import/no-named-as-default": "off",
+    "linebreak-style": "off",
+    "import/prefer-default-export": "warn",
+    "prefer-destructuring": "warn",
+    "@typescript-eslint/ban-ts-comment": "off"
+  }
+}

@@ -1,31 +1,28 @@
 {
   "compilerOptions": {
-    "useDefineForClassFields": true,
-    "target": "ESNext",
-    "module": "ESNext",
-    "strict": true,
-    "jsx": "preserve",
-    "importHelpers": true,
-    "moduleResolution": "node16",
-    "moduleDetection": "force",
-    "experimentalDecorators": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "outDir": "dist",
-    "baseUrl": ".",
-    "lib": ["esnext", "DOM"],
+    "target": "ESNext", // 目标语言的版本
+    "module": "ESNext", // 生成代码的模板标准
+    "importHelpers": true,  // 通过tslib引入helper函数，文件必须是模块
+    "moduleResolution": "node16", // 模块解析策略，ts默认用node的解析策略，即相对的方式导入
+    "skipLibCheck": true, // 跳过对声明文件的类型检查
+    "esModuleInterop": true, // 允许export=导出，由import from 导入
+    "resolveJsonModule": true, // 是否允许直接导入 JSON 文件作为模块。
+    "allowSyntheticDefaultImports": true, // 允许在导入模块时使用合成的默认导入。
+    "sourceMap": true, // 生成目标文件的sourceMap文件
+    "outDir": "dist", // 指定输出目录
+    "baseUrl": ".", // 解析非相对模块的基地址，默认是当前目录
+    "lib": ["esnext", "DOM"], // TS需要引用的库，即声明文件，es5 默认引用dom、es5、scripthost,如需要使用es的高级版本特性，通常都需要配置，如es8的数组新特性需要引入"ES2019.Array",
     "paths": {
       "@beaconify/utils": [
         "./packages/utils/lib"
       ]
     }
   },
+  // 指定一个匹配列表，支持 glob 通配符（属于自动指定该路径下的所有ts相关文件）
   "include": [
     "packages/**/*.ts",
     "packages/**/*.d.ts",
   ],
+  // 指定一个排除列表，支持 glob 通配符（include的反向操作）
   "exclude": ["node_modules"]
 }
