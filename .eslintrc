@@ -25,6 +25,10 @@
     "@typescript-eslint/ban-ts-comment": "off",
     "no-console": "off",
     "no-underscore-dangle": "off",
-    "no-param-reassign": "off"
+    "no-param-reassign": "off",
+    "func-names": "off",
+    "@typescript-eslint/no-this-alias": "off",
+    "no-restricted-syntax": "off",
+    "no-await-in-loop": "off"
   }
 }

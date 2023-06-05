@@ -15,7 +15,10 @@
     "paths": {
       "@beaconify/utils": [
         "./packages/utils/lib"
-      ]
+      ],
+      "@beaconify/plugin-browser": [
+        "./packages/plugin-browser/lib"
+      ],
     }
   },
   // 指定一个匹配列表，支持 glob 通配符（属于自动指定该路径下的所有ts相关文件）

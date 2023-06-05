@@ -1,0 +1,29 @@
+{
+  "name": "@beaconify/plugin-browser",
+  "version": "0.0.1",
+  "description": "beaconify 浏览器插件",
+  "author": "CrayonPig <475003925@qq.com>",
+  "homepage": "https://github.com/CrayonPig/beaconify#readme",
+  "license": "MIT",
+  "main": "lib/index.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrayonPig/beaconify.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/plugin-brower.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/CrayonPig/beaconify/issues"
+  }
+}

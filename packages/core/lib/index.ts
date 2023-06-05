@@ -1,19 +1,22 @@
+import { error } from '@beaconify/utils/lib/console';
 import initMixin from './init';
 
 export interface IBeaconifyOptions {
   debug: boolean;
+  dsn: string;
+  plugins: Array<string>;
 }
 
-export interface IBeaconifyFun {
-  (options: IBeaconifyOptions): void;
-}
-
-function Beaconify(options) {
+function Beaconify(options: IBeaconifyOptions): void {
   if (!(this instanceof Beaconify)) {
-    console.error('Beaconify is a constructor and should be called with the `new` keyword');
+    error('Beaconify 是一个构造函数，应该用`new`关键字调用');
     return;
   }
-  this._init(options);
+  try {
+    this._init(options);
+  } catch (e) {
+    error(e);
+  }
 }
 
 initMixin(Beaconify);

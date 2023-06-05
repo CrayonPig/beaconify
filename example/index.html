@@ -6,11 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<script src="./bundle.js"></script>
+<script src="./beaconify.js"></script>
+<script src="./pluginBrowser.js"></script>
 <body>
   
 </body>
 </html>
 <script>
-  new Beaconify()
+  new Beaconify({
+    debug: true,
+    dsn: 'https://examplePublicKey@baidu.com/0',
+    plugins: [pluginBrowser]
+  })
 </script>
